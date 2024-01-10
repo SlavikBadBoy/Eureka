@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eureka</title>
+    <link rel="stylesheet" href="/src/css/reset.css" />
     <link rel="stylesheet" href="/src/css/home.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -31,10 +32,15 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">PC</a>
+                <a class="nav-link" href="#about-us">About us</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -47,7 +53,7 @@
                   Dropdown
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Cars</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
@@ -80,13 +86,13 @@
           <div class="hero-content">
             <h1 class="text-light hero-description">
               Effective solutions for ordering goods with
-              <span class="text-warning">Eureka</span>
+              <span class="text-warning hero-description">Eureka</span>
             </h1>
             <button class="hero-button" data-modal-open>Order a product</button>
           </div>
         </div>
         <div class="backdrop is-hidden" data-backdrop>
-          <div class="modal" data-modal>
+          <div class="my-modal" data-modal>
             <button class="button-close" data-modal-close>X</button>
             <h3 class="modal-title">
               Leave your details, we will call you back
@@ -94,6 +100,9 @@
             <form action="#" class="form">
               <label for="name" class="label">Name</label>
               <div class="form-wrapper">
+                <svg class="form-svg">
+                  <use href="/src/img/hero/modal.svg#person-black"></use>
+                </svg>
                 <input
                   type="text"
                   name="username"
@@ -104,6 +113,9 @@
               </div>
               <label for="tel" class="label">Number phone</label>
               <div class="form-wrapper">
+                <svg class="form-svg">
+                  <use href="/src/img/hero/modal.svg#phone-black"></use>
+                </svg>
                 <input
                   type="tel"
                   name="usertel"
@@ -114,6 +126,9 @@
               </div>
               <label for="email" class="label">Email</label>
               <div class="form-wrapper">
+                <svg class="form-svg">
+                  <use href="/src/img/hero/modal.svg#email-black"></use>
+                </svg>
                 <input
                   type="email"
                   name="useremail"
@@ -134,9 +149,64 @@
                 >
               </div>
               <div class="btn-wrapper">
-                <button type="submit" class="btn-sumbit">Send</button>
+                <button type="submit" class="my-btn-sumbit">Send</button>
               </div>
             </form>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container advantages-container">
+          <div class="row mb-4">
+            <h2 class="advantages-title mt-4">Our advantages</h2>
+          </div>
+          <div class="row d-flex justify-content-center advantages">
+            <div
+              class="col-8 col-sm-4 col-lg-3 advantages-card bg-body-tertiary me-2 py-2"
+            >
+              <div class="advantage-img">
+                <img src="/src/img/advantages/speed.svg" alt="" class="mb-3" />
+              </div>
+              <h3 class="advantage-title text-light-emphasis">Speed</h3>
+              <p class="advantage-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Consequatur, ipsam!
+              </p>
+            </div>
+
+            <div
+              class="col-8 col-sm-3 col-lg-3 advantages-card bg-body-tertiary me-2 pt-4"
+            >
+              <div class="advantage-img">
+                <img src="src/img/advantages/quality.svg" alt="" class="mb-3" />
+              </div>
+              <h3 class="advantage-title text-light-emphasis">Quality</h3>
+              <p class="advantage-description">Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div
+              class="col-8 col-sm-4 col-lg-3 advantages-card bg-body-tertiary py-3"
+            >
+              <div class="advantage-img">
+                <img src="src/img/advantages/support.svg" alt="" class="mb-3" />
+              </div>
+              <h3 class="advantage-title text-light-emphasis">Support</h3>
+              <p class="advantage-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-us">
+        <div class="container about-us-container">
+          <div class="about-us-content">
+            <h2 class="about-us-title">About us</h2>
+            <p class="about-us-description">
+              In this marketplace you can buy a car from Europe, South Korea,
+              the USA, this is the best marketplace you have seen, eight hundred
+              thousand buyers have already received cars
+            </p>
           </div>
         </div>
       </section>
